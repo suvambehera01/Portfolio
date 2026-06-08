@@ -68,7 +68,7 @@ const FakeNewsDetail = () => {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 max-w-2xl">
               <motion.a
-                href="https://github.com/suvambehera01/Fake-News-Detection-"
+                href="https://github.com/suvambehera01/Fake-News-Detection"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ y: 24, opacity: 0 }}
@@ -81,15 +81,18 @@ const FakeNewsDetail = () => {
                 <Github className="h-5 w-5 shrink-0 text-white/90 transition-transform duration-300 group-hover:scale-110 group-hover:text-neon-pink" aria-hidden />
                 <span>View Source Code (GitHub)</span>
               </motion.a>
-              <motion.div
-                initial={{ y: 24, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.48, duration: 0.5 }}
-                className="inline-flex w-full sm:flex-1 sm:min-w-[240px] min-h-[48px] items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/[0.07] px-6 py-3.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-white shadow-lg backdrop-blur-md sm:px-8 sm:text-xs select-none"
-              >
-                <Globe className="h-5 w-5 shrink-0 text-white/90 text-brand-accent" aria-hidden />
-                <span>View Live Project</span>
-              </motion.div>
+              <motion.a
+  href="https://fake-news-detection-2igb.onrender.com/predict-page"
+  target="_blank"
+  rel="noopener noreferrer"
+  initial={{ y: 24, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.48, duration: 0.5 }}
+  className="inline-flex w-full sm:flex-1 sm:min-w-[240px] min-h-[48px] items-center justify-center gap-3 rounded-xl"
+>
+  <Globe className="h-5 w-5 shrink-0 text-white/90 text-brand-accent" />
+  <span>View Live Project</span>
+</motion.a>
             </div>
           </motion.div>
         </div>
